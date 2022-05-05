@@ -76,7 +76,7 @@ public class MCCordovaPlugin extends CordovaPlugin implements UrlHandler {
 
     @Nullable
     @Override
-    public void handleUrl(
+    public PendingIntent handleUrl(
         @NonNull Context context, @NonNull String url, @NonNull String urlType) {
         if (eventsChannel != null) {
             try {

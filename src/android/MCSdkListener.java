@@ -15,9 +15,11 @@ public enum MCSdkListener implements UrlHandler {
 
     @Nullable
     @Override
-    public void handleUrl(@NonNull Context context, @NonNull String s, @NonNull String s1) {
+    public PendingIntent handleUrl(@NonNull Context context, @NonNull String s, @NonNull String s1) {
         if (urlHandler != null) {
             urlHandler.handleUrl(context, s, s1);
         }
+
+        return null;  // The url will need to be handled by the Cordova dev in JS.
     }
 }

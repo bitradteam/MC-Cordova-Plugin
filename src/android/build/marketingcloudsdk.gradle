@@ -18,4 +18,5 @@ repositories {
 
 dependencies {
     implementation("com.salesforce.marketingcloud:marketingcloudsdk:8.0.6")
+    implementation 'androidx.work:work-runtime-ktx:2.7.0'
 }

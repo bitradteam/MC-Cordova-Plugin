@@ -6,6 +6,8 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.2'
+        //test pb
+        classpath 'com.google.gms:google-services:4.3.2'
     }
 }
 
@@ -19,4 +21,9 @@ repositories {
 dependencies {
     implementation("com.salesforce.marketingcloud:marketingcloudsdk:8.0.7")
     implementation 'androidx.work:work-runtime-ktx:2.7.0'
+    //test pb
+    implementation 'com.google.firebase:firebase-core:9.6.1'
 }
+
+//test pb
+apply plugin: 'com.google.gms.google-services'
